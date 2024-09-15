@@ -1,0 +1,12 @@
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS Clientes 
+                (Mátricula INTEGER PRIMARY KEY,
+                Nome TEXT,
+                Cód_Seg VARCHAR(4),
+                Salário INTEGER);
+INSERT INTO "Clientes" VALUES(111,'Leandro','123L',12121);
+INSERT INTO "Clientes" VALUES(112,'Carlos','T498',14500);
+INSERT INTO "Clientes" VALUES(113,'Teste','82G3',11700);
+INSERT INTO "Clientes" VALUES(114,'Exemplo','46P0',13600);
+INSERT INTO "Clientes" VALUES(115,'Luk','15A9',17800);
+COMMIT;
